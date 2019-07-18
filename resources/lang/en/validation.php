@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     /*
     |--------------------------------------------------------------------------
     | Validation Language Lines
@@ -139,12 +138,71 @@ return [
     | Custom Validation Attributes
     |--------------------------------------------------------------------------
     |
-    | The following language lines are used to swap our attribute placeholder
-    | with something more reader friendly such as "E-Mail Address" instead
-    | of "email". This simply helps us make our message more expressive.
+    | The following language lines are used to swap attribute place-holders
+    | with something more reader friendly such as E-Mail Address instead
+    | of "email". This simply helps us make messages a little cleaner.
     |
     */
 
-    'attributes' => [],
+    'attributes' => [
+        'backend' => [
+            'access' => [
+                'permissions' => [
+                    'associated_roles' => 'Associated Roles',
+                    'dependencies' => 'Dependencies',
+                    'display_name' => 'Display Name',
+                    'group' => 'Group',
+                    'group_sort' => 'Group Sort',
 
+                    'groups' => [
+                        'name' => 'Group Name',
+                    ],
+
+                    'name' => 'Name',
+                    'first_name' => 'First Name',
+                    'last_name' => 'Last Name',
+                    'system' => 'System',
+                ],
+
+                'roles' => [
+                    'associated_permissions' => 'Associated Permissions',
+                    'name' => 'Name',
+                    'sort' => 'Sort',
+                ],
+
+                'users' => [
+                    'active' => 'Active',
+                    'associated_roles' => 'Associated Roles',
+                    'confirmed' => 'Confirmed',
+                    'email' => 'E-mail Address',
+                    'name' => 'Name',
+                    'last_name' => 'Last Name',
+                    'first_name' => 'First Name',
+                    'other_permissions' => 'Other Permissions',
+                    'password' => 'Password',
+                    'password_confirmation' => 'Password Confirmation',
+                    'send_confirmation_email' => 'Send Confirmation E-mail',
+                    'timezone' => 'Timezone',
+                    'language' => 'Language',
+                ],
+            ],
+        ],
+
+        'frontend' => [
+            'avatar' => 'Avatar Location',
+            'email' => 'E-mail Address',
+            'first_name' => 'First Name',
+            'last_name' => 'Last Name',
+            'name' => 'Full Name',
+            'password' => 'Password',
+            'password_confirmation' => 'Password Confirmation',
+            'phone' => 'Phone',
+            'message' => 'Message',
+            'new_password' => 'New Password',
+            'new_password_confirmation' => 'New Password Confirmation',
+            'old_password' => 'Old Password',
+            'timezone' => 'Timezone',
+            'language' => 'Language',
+        ],
+    ],
 ];
